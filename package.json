@@ -41,5 +41,8 @@
     "scaffolt": "*",
     "grunt": "~0.4.5"
   },
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "jethro": "^2.6.3"
+  }
 }
