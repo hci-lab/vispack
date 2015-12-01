@@ -1,6 +1,7 @@
 /node_modules/
 *.idea*
 *.js
+.jshintrc
 *.map
 npm-debug.log
 *.idea*
