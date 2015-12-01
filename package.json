@@ -1,0 +1,45 @@
+{
+  "name": "vispack",
+  "description": "Package manager for visualization app",
+  "version": "0.0.1",
+  "homepage": "https://github.com/hci-lab/vispack",
+  "author": {
+    "name": "HCI Lab",
+    "email": "info@http://hci.fci.helwan.edu.eg",
+    "url": "http://hci.fci.helwan.edu.eg"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hci-lab/vispack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hci-lab/vispack/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/hci-lab/vispack/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "src/vispack",
+  "engines": {
+    "node": ">=5.1.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "load-grunt-tasks": "*",
+    "grunt-contrib-coffee": "~0.7",
+    "grunt-contrib-watch": "*",
+    "grunt-mocha-test": "*",
+    "coffee-script": "*",
+    "mocha": "*",
+    "sinon": "*",
+    "chai": "*",
+    "sinon-chai": "*",
+    "scaffolt": "*",
+    "grunt": "~0.4.5"
+  },
+  "keywords": []
+}
