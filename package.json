@@ -1,0 +1,24 @@
+{
+  "name": "vispack",
+  "version": "0.0.0",
+  "main": "lib/vispack.js",
+  "description": "visualization-app package manager",
+  "homepage": "https://github.com/hci-lab/vispack",
+  "bugs": "https://github.com/hci-lab/vispack/issues",
+  "author": {
+    "name": "hci lab",
+    "email": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hci-lab/vispack"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "devDependencies": {
+    "mocha": "~1.12.1"
+  }
+}
