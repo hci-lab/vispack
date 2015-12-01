@@ -1,13 +1,13 @@
-# vispack [![Build Status](https://secure.travis-ci.org/sameh/vispack.png?branch=master)](http://travis-ci.org/sameh/vispack)
 
-Package manager for visualization app
+# vispack [![Build Status](https://secure.travis-ci.org/hci-lab/vispack.png?branch=master)](http://travis-ci.org/hci-lab/vispack)
 
+visualization-app package manager
 ## Getting Started
 Install the module with: `npm install vispack`
 
-```javascript
-var vispack = require('vispack');
-vispack.awesome(); // "awesome"
+```coffee-script
+vispack = require 'vispack'
+vispack.awesome() // "awesome"
 ```
 
 ## Documentation
@@ -23,5 +23,4 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 _(Nothing yet)_
 
 ## License
-Copyright (c) 2015 HCI Lab  
-Licensed under the MIT license.
+Copyright (c) 2015 HCI Lab. Licensed under the MIT license.

@@ -2,3 +2,5 @@
 *.idea*
 *.js
 *.map
+npm-debug.log
+*.idea*

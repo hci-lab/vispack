@@ -10,4 +10,4 @@ Licensed under the MIT license.
 ###
 
 exports.awesome = ->
-  "awesome"
+  'awesome'
