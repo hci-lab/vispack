@@ -6,7 +6,7 @@ sinonChai = require('sinon-chai')
 
 chai.use(sinonChai)
 
-vispack = require('../lib/vispack.coffee')
+vispack = require('../src/vispack.coffee')
 
 describe "test", ->
   beforeEach (done) ->
@@ -19,5 +19,3 @@ describe "test", ->
     expect(@foo).to.equal "bar"
     expect(@foo).to.have.length 3
     expect(@beverages).to.have.property("tea").with.length 3
-
-
