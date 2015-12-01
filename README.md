@@ -1,6 +1,5 @@
 
-# vispack [![Build Status](https://secure.travis-ci.org/hci-lab/vispack.png?branch=master)](http://travis-ci.org/hci-lab/vispack)
-
+# vispack [![Build Status](https://secure.travis-ci.org/hci-lab/vispack.png?branch=master)](http://travis-ci.org/hci-lab/vispack) [![Build Status](https://cdn.gruntjs.com/builtwith.png)](http://travis-ci.org/hci-lab/vispack)
 visualization-app package manager
 ## Getting Started
 Install the module with: `npm install vispack`
