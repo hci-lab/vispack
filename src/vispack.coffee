@@ -16,7 +16,7 @@ commands = process.argv.slice 2
 
 if commands[0] is 'remove'
   plugin_name = commands[1]
-  fs.getDirs process.cwd() + '//plugins//node_modules//' + plugin_name, (err, dirs) ->
+  fs.getDirs process.cwd() + '\\plugins\\node_modules\\' + plugin_name, (err, dirs) ->
     if err
       console.log 'directory not found'
     else
