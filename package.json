@@ -41,5 +41,10 @@
     "scaffolt": "*",
     "grunt": "~0.4.5"
   },
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "extfs": "0.0.7",
+    "fs-extra": "^0.26.2",
+    "jethro": "^2.6.3"
+  }
 }
