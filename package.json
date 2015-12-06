@@ -28,6 +28,9 @@
   "scripts": {
     "test": "grunt test"
   },
+  "bin": {
+    "vispack": "src/vispack.js"
+  },
   "devDependencies": {
     "load-grunt-tasks": "*",
     "grunt-contrib-coffee": "~0.7",
@@ -47,8 +50,5 @@
     "extfs": "0.0.7",
     "fs-extra": "^0.26.2",
     "jethro": "^2.6.3"
-  },
-  "bin":{
-    "vispack": "src\vispack"
   }
 }
