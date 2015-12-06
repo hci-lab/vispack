@@ -21,15 +21,16 @@
       "url": "https://github.com/hci-lab/vispack/blob/master/LICENSE-MIT"
     }
   ],
+  "bin": {
+    "vispack": "src/vispack.js"
+  },
   "main": "src/vispack",
   "engines": {
     "node": ">=5.1.0"
   },
+  "preferGlobal": "true",
   "scripts": {
     "test": "grunt test"
-  },
-  "bin": {
-    "vispack": "src/vispack.js"
   },
   "devDependencies": {
     "load-grunt-tasks": "*",
