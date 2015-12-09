@@ -22,14 +22,15 @@
     }
   ],
   "bin": {
-    "vispack": "src/vispack.js"
+    "vispack": "dist/vispack.js"
   },
-  "main": "src/vispack",
+  "main": "dist/vispack",
   "engines": {
     "node": ">=5.1.0"
   },
   "preferGlobal": "true",
   "scripts": {
+    "preinstall": "coffee --bare --no-header --output dist --compile src",
     "test": "grunt test"
   },
   "devDependencies": {

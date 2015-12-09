@@ -1,3 +1,5 @@
+`#!/usr/bin/env node
+`
 ###
 project     | vispack
 url         | https://github.com/hci-lab/vispack/blob/master/src/vispack.coffee
@@ -7,12 +9,12 @@ description | a cli utility to install and remove plugins.
 
 Copyright (c) 2015 HCI Lab. Licensed under the MIT license.
 ###
-exec = require 'child_process'
-logger = require 'jethro'
-fs = require 'extfs'
-fse = require 'fs-extra'
+exec    = require 'child_process'
+logger  = require 'jethro'
+fs      = require 'extfs'
+fse     = require 'fs-extra'
 program = require 'commander'
-pjson = require '../package.json'
+pjson   = require '../package.json'
 
 
 program
@@ -37,16 +39,18 @@ else if program.remove is true
   logger 'Error', 'vispack', 'missing arguments. [vispack -h] for more help.'
 else if program.install isnt true and program.remove is undefined and program.install isnt undefined
   package_name = program.install
-  prefix = './plugins'
-  str = 'npm install --prefix ' + prefix + ' ' + package_name
+  install_dir  = process.env.APPDATA + '/npm/node_modules/vispack' || (process.platform == 'darwin' ? process.env.HOME + 'Library/Preference/npm/node_modules/vispack' : '/usr/lib/node_modules/vispack')
+  prefix       = install_dir + '/plugins'
+  str          = 'npm install --prefix ' + prefix + ' ' + package_name
   exec.exec str ,(error,stdout,stderr) ->
     logger 'Info' , 'vispack installer' , stdout
     if error isnt null
       logger 'Error', 'vispack installer' , 'something wrong happened. try again later.'
 else if program.remove isnt true and program.install is undefined and program.remove isnt undefined
   package_name = program.remove
-  prefix = './plugins'
-  str = 'npm remove --prefix ' + prefix + ' ' + package_name
+  install_dir  = process.env.APPDATA + '/npm/node_modules/vispack' || (process.platform == 'darwin' ? process.env.HOME + 'Library/Preference/npm/node_modules/vispack' : '/var/local/npm/node_modules/vispack')
+  prefix       = install_dir + '/plugins'
+  str          = 'npm remove --prefix ' + prefix + ' ' + package_name
   exec.exec str ,(error,stdout,stderr) ->
     logger 'Info' , 'vispack removal' , stdout
     if error isnt null
