@@ -6,7 +6,7 @@ sinonChai = require('sinon-chai')
 
 chai.use(sinonChai)
 
-vispack = require('../src/vispack.coffee')
+#vispack = require('../src/vispack.coffee')
 
 describe "test", ->
   beforeEach (done) ->
