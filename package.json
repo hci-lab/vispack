@@ -21,11 +21,16 @@
       "url": "https://github.com/hci-lab/vispack/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "src/vispack",
+  "bin": {
+    "vispack": "dist/vispack.js"
+  },
+  "main": "dist/vispack",
   "engines": {
     "node": ">=5.1.0"
   },
+  "preferGlobal": "true",
   "scripts": {
+    "preinstall": "coffee --bare --no-header --output dist --compile src",
     "test": "grunt test"
   },
   "devDependencies": {
@@ -43,6 +48,7 @@
   },
   "keywords": [],
   "dependencies": {
+    "commander": "^2.9.0",
     "extfs": "0.0.7",
     "fs-extra": "^0.26.2",
     "jethro": "^2.6.3"
